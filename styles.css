@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner-principal {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 50px;
+}
+
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner {
+  flex: 0 0 calc(25% - 2cm); /* Quatro banners visíveis com 2cm de espaçamento lateral */
+  margin: 0 1cm; /* Espaçamento lateral de 2cm (1cm de cada lado) */
+  background-color: #ddd;
+  text-align: center;
+  padding: 40px 10px;
+  box-sizing: border-box;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
